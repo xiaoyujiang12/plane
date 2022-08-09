@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>添加航班信息</title>
+        <style>
+            form{
+                    width: 1000px;
+                    height:500px;
+                    background-color: #F5EAE8;padding: 30px 40px;border: 1px soild #F5EAE8;
+                }
+            </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/air.css" type="text/css">
+        <script type="text/javascript" src="js/air.js"></script>
+    </head>
+    <body>
+        <h2 align="center">添加航班信息</h2><center>
+        <form name="form1" onSubmit="return check()" action="add.jsp" method="post">
+            <table align="center" width="30%">
+                <tr><th width="30%">航班号</th>
+                    <td><input type="text" name="flightnumber"></td></tr>
+                <tr><th>起飞地</th>
+                    <td><input type="text" name="start"></td></tr>
+                <tr><th>目的地</th>
+                    <td><input type="text" name="finish"></td></tr>
+                <tr><th>起飞时间</th>
+                    <td><input type="text" name="starttime"></td></tr>
+                <tr><th>到达时间</th>
+                    <td><input type="text" name="finishtime"></td></tr>
+                <tr><th colspan="2">
+                        <input type="submit" value="添加">
+                        <input type="reset" value="重置"></th></tr>
+            </table>
+        </form></center>
+    </body>
+</html>

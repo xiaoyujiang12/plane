@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>添加航班信息</title>
+        <style>
+            form{
+                    width: 1000px;
+                    height:500px;
+                   border: 1px soild #F5EAE8;
+                }
+                .t1{
+                    width: 150px;height: 27px;border-radius: 8px;margin-top: 7px;
+                }
+               .a{width: 1000px;height: 500px;margin: 0 auto;}
+   
+            .b1{background-color: #ccffff;padding-top: 10px;margin-top: 10px;height:370px;padding-bottom: 0px;width: 1000px;margin-top: 10px;}
+            .b2{background-color: pink;height: 230px;}
+            </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/air.css" type="text/css">
+        <script type="text/javascript" src="js/air.js"></script>
+    </head>
+    <body>
+        <div class="a">
+            <div class="b1">
+              <h2 align="center">添加机票信息</h2><center>
+                     
+                        <form name="form1" onSubmit="return check()" action="jipiaoadd.jsp" method="post">
+             <div class="b2"><table align="center" width="35%">
+                <tr><th width="35%">航班号</th>
+                    <td><input type="text" name="aflightnumber" class="t1"></td></tr>
+                <tr><th>座位号</th>
+                    <td><input type="text" name="aseat" class="t1"></td></tr>
+                <tr><th>价格</th>
+                    <td><input type="text" name="price" class="t1"></td></tr>
+                <br>
+                        <input type="submit" value="添加">
+                        <input type="reset" value="重置"></th></tr>
+            </table>
+             </div>
+        </form></center></div></div> 
+    </body>
+</html>
+
